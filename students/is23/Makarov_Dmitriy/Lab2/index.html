@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ЛР1\ЛР2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="page__header">
+      <h1 class="page__title">ЛР1 — Вёрстка калькулятора + ЛР2 - Создание калькулятора. Функции на JavaScript</h1>
+      <p class="page__subtitle">ЛР1 - HTML + CSS. Макет адаптивный. ЛР2 - знакомство с инструментами построения пользовательских интерфейсов web-сайтов: HTML, CSS, JavaScript. В ходе выполнения работы, вам предстоит продолжить реализовывать простой калькулятор, и затем выполнить задания по варианту. </p>
+      <section class="lr-goal">
+        <h2>Цель лабораторной работы</h2>
+        <p>
+          Цель данной лабораторной работы — <mark>знакомство</mark> с инструментами
+          построения пользовательских интерфейсов web-сайтов: <mark>HTML</mark>, <mark>CSS</mark>. Знакомство с инструментами построения пользовательских интерфейсов web-сайтов: HTML, CSS, JavaScript. В ходе выполнения работы, вам предстоит продолжить реализовывать простой калькулятор, и затем выполнить задания по варианту.
+        </p>
+      </section>
+    </header>
+
+    <section class="calc" aria-label="Макет калькулятора">
+      <div class="calc__device" role="group" aria-label="Калькулятор">
+        <div class="calc__screen screen" aria-live="polite" aria-atomic="true">
+          <div id="screenHistory" class="calc__screen-history"></div>
+          <div id="screenValue" class="calc__screen-value" aria-label="Текущее значение">0</div>
+        </div>
+        <div class="calc__grid" role="grid" aria-label="Кнопки">
+          
+          <button type="button" class="btn btn--util" data-action="clear"      aria-label="Очистить всё">AC</button>
+          <button type="button" class="btn btn--util" data-action="backspace"  aria-label="Стереть">⌫</button>
+          <button type="button" class="btn btn--util" data-action="percent"    aria-label="Процент">%</button>
+          <button type="button" class="btn btn--op"   data-op="÷"              aria-label="Деление">÷</button>
+
+          
+          <button type="button" class="btn" data-digit="7">7</button>
+          <button type="button" class="btn" data-digit="8">8</button>
+          <button type="button" class="btn" data-digit="9">9</button>
+          <button type="button" class="btn btn--op" data-op="×" aria-label="Умножение">×</button>
+
+          <button type="button" class="btn" data-digit="4">4</button>
+          <button type="button" class="btn" data-digit="5">5</button>
+          <button type="button" class="btn" data-digit="6">6</button>
+          <button type="button" class="btn btn--op" data-op="−" aria-label="Вычитание">−</button>
+
+          <button type="button" class="btn" data-digit="1">1</button>
+          <button type="button" class="btn" data-digit="2">2</button>
+          <button type="button" class="btn" data-digit="3">3</button>
+          <button type="button" class="btn btn--op" data-op="+" aria-label="Сложение">+</button>
+
+          <button type="button" class="btn btn--zero" data-digit="0">0</button>
+          <button type="button" class="btn" data-decimal="true" aria-label="Запятая">,</button>
+          <button type="button" class="btn btn--eq" data-action="equals" aria-label="Равно">=</button>
+        </div>
+
+        <div class="calc__extra">
+          <button type="button" class="btn btn--small" data-action="sign">+/-</button>
+          <button type="button" class="btn btn--small" data-action="sqrt">√</button>
+          <button type="button" class="btn btn--small" data-action="square">x²</button>
+          <button type="button" class="btn btn--small" data-action="factorial">x!</button>
+          <button type="button" class="btn btn--small" data-action="triple-zero">000</button>
+          <button type="button" class="btn btn--small" data-action="acc-add">Σ+</button>
+          <button type="button" class="btn btn--small" data-action="acc-sub">Σ−</button>
+          <button type="button" class="btn btn--small" data-action="cube">x³</button>
+          <button type="button" class="btn btn--small" data-action="bg-toggle">BG</button>
+          <button type="button" class="btn btn--small" data-action="screen-toggle">WIN</button>
+        </div>
+
+    </section>
+
+    <section class="spec">
+      <h2>Требования к вёрстке</h2>
+      <ul>
+        <li>Семантическая разметка, валидный HTML5.</li>
+        <li>Адаптивность: ширины 320–1200px, контейнер фиксируется на 420px для «девайса».</li>
+        <li>Единый шрифт Inter, система сетки — CSS Grid.</li>
+        <li>Состояния наведения/нажатия.</li>
+      </ul>
+    </section>
+
+    <footer class="page__footer">
+      <details class="footer-details">
+         <summary class="footer-summary">Информация об авторе</summary>
+          <p>Автор: Макаров Д.Е. Группа: ИС-23</p>
+          <a href="http://github.com/LightBear124" class="btn" target="_blank">
+            Мой GitHub
+          </a>
+      </details>
+    </footer>
+  </main>
+<script src="main.js"></script>
+</body>
+</html>

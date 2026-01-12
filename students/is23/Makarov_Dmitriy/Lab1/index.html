@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ЛР1 — Калькулятор (HTML+CSS)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="page__header">
+      <h1 class="page__title">ЛР1 — Вёрстка калькулятора</h1>
+      <p class="page__subtitle">HTML + CSS. Макет адаптивный.</p>
+      <section class="lr-goal">
+        <h2>Цель лабораторной работы</h2>
+        <p>
+          Цель данной лабораторной работы — <mark>знакомство</mark> с инструментами
+          построения пользовательских интерфейсов web-сайтов: <mark>HTML</mark>, <mark>CSS</mark>.
+        </p>
+      </section>
+    </header>
+
+    <section class="calc" aria-label="Макет калькулятора">
+      <div class="calc__device" role="group" aria-label="Калькулятор">
+        <div class="calc__screen" aria-live="polite" aria-atomic="true">
+          <div class="calc__screen-history">400 + 73 × 3 =</div>
+          <div class="calc__screen-value" aria-label="Текущее значение">619</div>
+        </div>
+        <div class="calc__grid" role="grid" aria-label="Кнопки">
+          <button class="btn btn--util" role="gridcell" aria-label="Очистить всё">AC</button>
+          <button class="btn btn--util" role="gridcell" aria-label="Стереть">⌫</button>
+          <button class="btn btn--util" role="gridcell" aria-label="Процент">%</button>
+          <button class="btn btn--op"   role="gridcell" aria-label="Деление">÷</button>
+
+          <button class="btn" role="gridcell">7</button>
+          <button class="btn" role="gridcell">8</button>
+          <button class="btn" role="gridcell">9</button>
+          <button class="btn btn--op" role="gridcell" aria-label="Умножение">×</button>
+
+          <button class="btn" role="gridcell">4</button>
+          <button class="btn" role="gridcell">5</button>
+          <button class="btn" role="gridcell">6</button>
+          <button class="btn btn--op" role="gridcell" aria-label="Вычитание">−</button>
+
+          <button class="btn" role="gridcell">1</button>
+          <button class="btn" role="gridcell">2</button>
+          <button class="btn" role="gridcell">3</button>
+          <button class="btn btn--op" role="gridcell" aria-label="Сложение">+</button>
+
+          <button class="btn btn--zero" role="gridcell">0</button>
+          <button class="btn" role="gridcell" aria-label="Запятая">,</button>
+          <button class="btn btn--eq" role="gridcell" aria-label="Равно">=</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="spec">
+      <h2>Требования к вёрстке</h2>
+      <ul>
+        <li>Семантическая разметка, валидный HTML5.</li>
+        <li>Адаптивность: ширины 320–1200px, контейнер фиксируется на 420px для «девайса».</li>
+        <li>Единый шрифт Inter, система сетки — CSS Grid.</li>
+        <li>Состояния наведения/нажатия.</li>
+      </ul>
+    </section>
+
+    <footer class="page__footer">
+      <details class="footer-details">
+         <summary class="footer-summary">Информация об авторе</summary>
+          <p>Автор: Макаров Д.Е. Группа: ИС-23</p>
+          <a href="http://github.com/LightBear124" class="btn" target="_blank">
+            Мой GitHub
+          </a>
+      </details>
+    </footer>
+  </main>
+</body>
+</html>
