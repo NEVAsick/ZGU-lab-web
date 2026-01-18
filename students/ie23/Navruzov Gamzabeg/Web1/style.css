@@ -1,0 +1,150 @@
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(rgba(30, 40, 50, 0.8), rgba(10, 20, 30, 0.9)),
+              url('https://russiatrek.org/blog/wp-content/uploads/2022/04/norilsk-russia-from-above-19.jpg') center/cover no-repeat fixed;
+  font-family: 'Roboto Mono', monospace; 
+  color: #cccccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  background: rgba(40, 50, 60, 0.85);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(200, 100, 50, 0.4); 
+  max-width: 400px;
+  width: 90%;
+  border: 3px solid #a0522d; 
+}
+
+.title {
+  color: #ff8c00;
+  text-shadow: 0 0 10px #ff4500;
+  margin-bottom: 20px;
+}
+
+
+.goal {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  background: rgba(50, 50, 50, 0.6);
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 5px solid #cd853f;
+}
+
+
+.info {
+  margin: 20px 0;
+  text-align: left;
+  font-size: 1rem;
+  background: rgba(30, 30, 30, 0.7);
+}
+
+
+.dropdown {
+  margin: 15px 0;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  background: #333;
+  color: #ddd;
+  border: 2px solid #808080;
+}
+
+
+.display {
+  width: 340px;
+  height: 100px;
+  margin-bottom: 25px;
+  background: #1c2526;
+  color: #87cefa; 
+  font-size: 3.5rem;
+  font-weight: 700; 
+  text-align: right;
+  padding: 0 20px;
+  line-height: 100px;
+  border-radius: 15px;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8), 0 0 15px rgba(135, 206, 250, 0.3);
+  border: 2px solid #4682b4;
+}
+
+
+.btn {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #696969;
+  border-radius: 12px;
+  background: linear-gradient(#505050, #303030);
+  color: #dddddd;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+
+.btn:hover {
+  background: linear-gradient(#b22222, #8b0000);
+  color: #ffffff;
+  border-color: #ff4500;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(255, 69, 0, 0.5);
+}
+
+
+.btn.primary {
+  background: linear-gradient(#cd7f32, #a0522d); 
+  color: #ffffff;
+}
+
+.btn.primary:hover {
+  background: linear-gradient(#ff8c00, #cd5c5c);
+}
+
+
+.btn.secondary {
+  background: linear-gradient(#708090, #4682b4);
+}
+
+.zero, .equal {
+  grid-column: span 2;
+  width: 168px;
+}
+
+.theme-toggle {
+  margin: 20px 0;
+  padding: 12px 20px;
+  background: #444;
+  border: 2px solid #808080;
+  border-radius: 20px;
+  color: #ddd;
+}
+
+.github-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 25px;
+  background: #555;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
+.github-btn:hover {
+  background: #333;
+}
+
+.footer {
+  margin-top: 30px;
+  font-size: 1.1rem;
+  color: #87cefa;
+  text-shadow: 0 0 8px #4682b4;
+}
