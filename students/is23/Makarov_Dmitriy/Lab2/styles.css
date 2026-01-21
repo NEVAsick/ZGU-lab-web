@@ -1,0 +1,138 @@
+:root{
+  --bg: #0b0f14;
+  --panel: #121822;
+  --panel-2:#0e141d;
+  --text: #e7eef8;
+  --muted:#9fb1c7;
+  --brand:#4c8dff;
+  --accent:#22c55e;
+  --danger:#ef4444;
+  --op:#3b82f6;
+  --radius: 20px;
+  --shadow: 0 20px 40px rgba(0,0,0,.4);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+
+  background: url("https://static.eldorado.ru/promo/src/chto-takoe-memy/img/header.jpg") 
+              no-repeat center center fixed;
+
+  background-size: cover;
+}
+
+
+.page{max-width: 900px; margin: 0 auto; padding: 24px;}
+.page__header{margin: 8px 0 24px}
+.page__title{font-size: clamp(24px, 3vw, 34px); margin:0 0 6px}
+.page__subtitle{color:var(--muted); margin:0}
+.page__footer{margin:32px 0; color:var(--muted); font-size:14px}
+
+.calc{
+  display:grid;
+  gap:14px;
+  justify-items:center;
+}
+.calc__device{
+  width: 420px;
+  max-width: 100%;
+  background: linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px;
+  border: 1px solid rgba(255,255,255,.06);
+}
+.calc__screen{
+  background: linear-gradient(180deg, #0b1320 0%, #0b0f14 100%);
+  border-radius: 14px;
+  padding: 16px 14px;
+  min-height: 96px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border:1px solid rgba(255,255,255,.06);
+}
+.calc__screen-history{
+  color: var(--muted);
+  font-size:14px;
+  line-height:1.2;
+  letter-spacing:.5px;
+  min-height: 18px;
+  opacity:.95;
+}
+.calc__screen-value{
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.calc__grid{
+  margin-top: 14px;
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.btn{
+  appearance: none;
+  border:0;
+  border-radius: 14px;
+  padding: 16px;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text);
+  background: #1b2331;
+  box-shadow: inset 0 -2px 0 rgba(255,255,255,.06), 0 4px 10px rgba(0,0,0,.2);
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  transition: transform .05s ease, filter .15s ease, box-shadow .2s ease;
+}
+.btn:hover{ filter: brightness(1.05) }
+.btn:active{ transform: translateY(1px) }
+.btn:focus-visible{ box-shadow: 0 0 0 3px rgba(76,141,255,.35) }
+
+.btn--op{ background: linear-gradient(180deg, rgba(59,130,246,.25), rgba(59,130,246,.15)); border:1px solid rgba(59,130,246,.35) }
+.btn--util{ background: linear-gradient(180deg, rgba(153,164,180,.25), rgba(153,164,180,.12)); border:1px solid rgba(153,164,180,.35); color:#eaf2ff }
+.btn--eq{ background: linear-gradient(180deg, rgba(34,197,94,.35), rgba(34,197,94,.2)); border:1px solid rgba(34,197,94,.45) }
+.btn--zero{ grid-column: span 2 }
+
+.calc__note{ color:var(--muted); margin: 8px 0 0; font-size: 14px; }
+
+@media (max-width: 420px){
+  .calc__screen-value{ font-size: 36px }
+  .btn{ padding: 14px; font-size: 20px }
+}
+
+.calc__extra {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.btn--small {
+  padding: 8px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* альт-тема фона по кнопке BG */
+body.theme-alt {
+  background: radial-gradient(circle at top, #1e293b 0%, #020617 60%, #000 100%);
+}
+
+/* альт-цвет окна вывода по кнопке WIN */
+.screen.screen-alt {
+  background: linear-gradient(180deg, #155f1f 0%, #020617 100%);
+  border-color: rgba(12, 105, 19, 0.6);
+}

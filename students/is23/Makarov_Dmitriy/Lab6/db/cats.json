@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "src": "https://moizver.com/upload/medialibrary/f5a/f5a1cbcd9bfdf5634edfa557c8662a1a.jpg",
+    "title": "Британская кошка",
+    "text": "Спокойная, любит уют.",
+    "status": "Ищет дом"
+  },
+  {
+    "id": 2,
+    "src": "https://yac-wh-sb-prod-s3-media-07001.storage.yandexcloud.net/media/images/sphinx.max-2880x1820.format-jpeg_SPtfFVj.jpg",
+    "title": "Сфинкс",
+    "text": "Общительная, любит тепло.",
+    "status": "На передержке"
+  },
+  {
+    "id": 3,
+    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Q8nougKzX25czjW0bDk3MwN6soF2aR5LZLWbjFdfTuj6hDR0Xq6lRmeq71YwxwhpN2w&usqp=CAU",
+    "title": "Мейн-кун",
+    "text": "Большой и добрый.",
+    "status": "Доступен"
+  }
+]
