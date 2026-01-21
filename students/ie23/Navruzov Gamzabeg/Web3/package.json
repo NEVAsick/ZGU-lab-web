@@ -1,0 +1,16 @@
+{
+  "name": "cats-app",
+  "version": "1.0.0",
+  "description": "Приложение про кошек с уведомлениями",
+  "main": "main.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  },
+  "type": "commonjs"
+}

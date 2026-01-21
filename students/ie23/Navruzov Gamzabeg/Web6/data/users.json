@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "first_name": "Gamza",
+    "last_name": "Navruzov",
+    "photo_max_orig": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScyMDAnIGhlaWdodD0nMjAwJz4KICAgICAgICA8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPScjNzQxNDVmJy8+CiAgICAgICAgPHRleHQgeD0nNTAlJyB5PSc1MCUnIGZvbnQtc2l6ZT0nNzInIGZpbGw9JyNmZmYnIGZvbnQtZmFtaWx5PSdBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZicgZG9taW5hbnQtYmFzZWxpbmU9J21pZGRsZScgdGV4dC1hbmNob3I9J21pZGRsZSc+R048L3RleHQ+CiAgICA8L3N2Zz4=",
+    "photo_max": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScyMDAnIGhlaWdodD0nMjAwJz4KICAgICAgICA8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPScjNzQxNDVmJy8+CiAgICAgICAgPHRleHQgeD0nNTAlJyB5PSc1MCUnIGZvbnQtc2l6ZT0nNzInIGZpbGw9JyNmZmYnIGZvbnQtZmFtaWx5PSdBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZicgZG9taW5hbnQtYmFzZWxpbmU9J21pZGRsZScgdGV4dC1hbmNob3I9J21pZGRsZSc+R048L3RleHQ+CiAgICA8L3N2Zz4=",
+    "domain": "https://vk.com/teamhalifat",
+    "sex": 0,
+    "city": {
+      "title": "Norilsk"
+    },
+    "bdate": "16.09.2005",
+    "about": "Test"
+  }
+]

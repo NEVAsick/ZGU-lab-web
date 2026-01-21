@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ЛР Калькулятор "Норильск" — Расширенная версия</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="title">Калькулятор "Норильск"</h1>
+
+    <section class="goal">
+      <p><strong>Цель:</strong> <em>знакомство</em> с <mark>HTML</mark>, <mark>CSS</mark> и логикой на TypeScript</p>
+    </section>
+
+    <details class="info">
+      <summary>Автор</summary>
+      <p><strong>ФИО:</strong> Наврузов Гамзабег Зарикович</p>
+      <p><strong>Группа:</strong> ИЭ-23</p>
+    </details>
+
+    <div class="calculator">
+      <div id="result" class="display">0</div>
+
+      <div class="buttons">
+        <div class="row">
+          <button id="btn_clear" class="btn secondary">C</button>
+          <button id="btn_sign" class="btn secondary">+/-</button>
+          <button id="btn_backspace" class="btn secondary">←</button>
+          <button id="btn_div" class="btn primary">÷</button>
+        </div>
+        <div class="row">
+          <button id="btn_7" class="btn">7</button>
+          <button id="btn_8" class="btn">8</button>
+          <button id="btn_9" class="btn">9</button>
+          <button id="btn_mult" class="btn primary">×</button>
+        </div>
+        <div class="row">
+          <button id="btn_4" class="btn">4</button>
+          <button id="btn_5" class="btn">5</button>
+          <button id="btn_6" class="btn">6</button>
+          <button id="btn_minus" class="btn primary">−</button>
+        </div>
+        <div class="row">
+          <button id="btn_1" class="btn">1</button>
+          <button id="btn_2" class="btn">2</button>
+          <button id="btn_3" class="btn">3</button>
+          <button id="btn_plus" class="btn primary">+</button>
+        </div>
+        <div class="row">
+          <button id="btn_sqrt" class="btn secondary">√</button>
+          <button id="btn_0" class="btn">0</button>
+          <button id="btn_000" class="btn">000</button>
+          <button id="btn_equal" class="btn primary equal">=</button>
+        </div>
+        <div class="row">
+          <button id="btn_square" class="btn secondary">x²</button>
+          <button id="btn_dot" class="btn">.</button>
+          <button id="btn_reciprocal" class="btn secondary">1/x</button>
+          <button id="btn_factorial" class="btn secondary">x!</button>
+        </div>
+      </div>
+
+      
+      <button id="theme_toggle" class="theme-toggle">🔥 / ❄️ Смена темы</button>
+
+      <a href="https://github.com/GamzaNavruzovISIT" target="_blank" class="github-btn">GitHub</a>
+    </div>
+
+    <footer class="footer">
+      ЛР выполнена: Наврузов Гамзабег Зарикович
+    </footer>
+  </div>
+
+  <script src="calculator.js"></script>
+</body>
+</html>
